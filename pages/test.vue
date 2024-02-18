@@ -4,7 +4,11 @@
     <option value="light">Light</option>
     <option value="dark">Dark</option>
   </select>
-  <div class="h-20 bg-background dark:bg-background-dark">Tester page</div>
+  <div
+    class="h-20 bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark"
+  >
+    Tester page
+  </div>
   <div class="xd bg-background">This is xd</div>
 </template>
 
