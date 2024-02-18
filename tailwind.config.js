@@ -28,12 +28,18 @@ export default {
         // => @media (min-width: 1536px) { ... }
       },
       colors: {
-        // ...
         background: {
-          DEFAULT: "#06b6d4",
-          dark: "#0e7490",
+          DEFAULT: "#EAF9FF",
+          dark: "#01021A",
         },
-        // ...
+        foreground: {
+          DEFAULT: "#01021A",
+          dark: "#EAF9FF",
+        },
+        highlight: {
+          DEFAULT: "#01021A",
+          dark: "#FFC347",
+        },
       },
     },
   },

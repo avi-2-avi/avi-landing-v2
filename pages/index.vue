@@ -1,10 +1,1 @@
-<template>
-  <select v-model="$colorMode.preference">
-    <option value="system">System</option>
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-  </select>
-  <div class="w-max h-20 bg-background dark:bg-background-dark">
-    Hello world
-  </div>
-</template>
+<template></template>
