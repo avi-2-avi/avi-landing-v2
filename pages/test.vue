@@ -13,6 +13,18 @@
     <NavigationList></NavigationList>
   </div>
   <div class="xd bg-background">This is xd</div>
+  <div>
+    <div class="flex flex-col">
+      <button @click="selectItem('Home')">Home</button>
+      <button @click="selectItem('About')">About</button>
+      <button @click="selectItem('Services')">Services</button>
+    </div>
+    <div>
+      <p class="text-red-700">
+        Selected Item: {{ navigationStore.selectedItem }}
+      </p>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -20,3 +32,11 @@
   margin: 5rem;
 }
 </style>
+
+<script lang="ts" setup>
+const navigationStore = useNavigationStore();
+
+const selectItem = (item: string) => {
+  navigationStore.selectItem(item);
+};
+</script>
