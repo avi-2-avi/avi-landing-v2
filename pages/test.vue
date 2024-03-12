@@ -15,9 +15,9 @@
   <div class="xd bg-background">This is xd</div>
   <div>
     <div class="flex flex-col">
-      <button @click="selectItem('Home')">Home</button>
-      <button @click="selectItem('About')">About</button>
-      <button @click="selectItem('Services')">Services</button>
+      <button @click="selectItem('home')">Home</button>
+      <button @click="selectItem('about')">About</button>
+      <button @click="selectItem('services')">Services</button>
     </div>
     <div>
       <p class="text-red-700">
@@ -38,5 +38,6 @@ const navigationStore = useNavigationStore();
 
 const selectItem = (item: string) => {
   navigationStore.selectItem(item);
+  navigateTo("/test#" + item);
 };
 </script>
