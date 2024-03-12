@@ -10,6 +10,7 @@
     class="h-20 bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark"
   >
     Tester page
+    <NavigationList></NavigationList>
   </div>
   <div class="xd bg-background">This is xd</div>
 </template>
